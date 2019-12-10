@@ -1,0 +1,12 @@
+## Ignore package-lock.json 
+package-lock.json
+
+## Ignore .env (config connect to bdd)
+.env
+
+## Ignore directory of node_modules
+/node_modules
+
+## Ignore directory of BDD
+## Uncomment when you push your server online
+## /bdd
