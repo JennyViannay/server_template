@@ -28,6 +28,6 @@ app.get('/', (req, res) => {
 // app.use("/routes_for_user", route.user)
 
 app.listen(port, err => {
-    if (err){ throw new Error('something bad happened...')}
-    console.log(`server is listening on ${port}`)
+    if (err){ throw new Error('👎 👎  -- Something bad happened... server not connected -- 👎 👎 ')}
+    console.log(`😎😎 -- Node/Express Server is listening on ${port} -- 😎😎`)
 }) 

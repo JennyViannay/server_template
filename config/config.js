@@ -7,19 +7,22 @@
 // require('dotenv').config(process.cwd(), '.env')
 // if you use dotenv, think to change connection below by VARIABLES of .env
 // Report you to the README.md in the same directory to see example.
+const db_name = ''
+const db_port = 3306 //8889 if you use MAMP Server
 const mysql = require('mysql')
 const connection = mysql.createConnection({
     host: 'localhost',
+    port: db_port,
     user: 'root',
     password: 'root',
-    database: 'bdd_name'
+    database: db_name
 })
 
 connection.connect(function (err) {
     if (!err) {
-        console.log("Database is connected");
+        console.log(`😎😎 -- MySql is connected on ${db_name}'s database on port ${db_port} -- 😎😎`);
     } else {
-        console.log("Error connecting database", err);
+        console.log("-- 👎 👎  -- Error connecting MySql : -- 👎 👎 -- ", err);
     }
 });
 
